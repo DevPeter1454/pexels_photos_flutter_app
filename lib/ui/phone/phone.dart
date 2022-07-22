@@ -94,13 +94,13 @@ class _MobileViewState extends State<MobileView> {
           title: const Text('Mobile'),
           centerTitle: true,
           actions: [
-            SizedBox(
+            searching ? SizedBox(
                 width: MediaQuery.of(context).size.width / 3,
                 child: TextField(
                   controller: query,
                   decoration: const InputDecoration(
                       filled: true, label: Text('Search Pexels ')),
-                )),
+                )) : const SizedBox.shrink(),
             IconButton(
               icon: const Icon(Icons.search),
               onPressed: () {
@@ -108,7 +108,6 @@ class _MobileViewState extends State<MobileView> {
                   searching = true;
                   // sQuery = query.text;
                 });
-
                 getSearch(width);
                 // query.clear();
               },
