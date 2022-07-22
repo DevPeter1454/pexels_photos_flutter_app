@@ -57,9 +57,10 @@ class _MobileViewState extends State<MobileView> {
       if (controller.position.pixels == controller.position.maxScrollExtent &&
           images.length != 800) {
         retrieveImage(width);
-      } else if (controller.position.pixels ==
+      } 
+      if (controller.position.pixels ==
               controller.position.maxScrollExtent &&
-          images.length != 800 &&
+          sImages.length != 800 &&
           searching == true) {
         getSearch(width);
       }

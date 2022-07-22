@@ -57,7 +57,7 @@ class _ImageViewState extends State<ImageView> {
                   // Share.share('${received.src.medium}');
                   // _onShare(context);
                 },
-                child: const Text('Save Image'),
+                child: const Text('Share Image'),
               )
 
           ],

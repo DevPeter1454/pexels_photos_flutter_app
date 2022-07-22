@@ -59,7 +59,7 @@ class _GalleryState extends State<Gallery> {
         retrieveImage(width);
       } else if (controller.position.pixels ==
               controller.position.maxScrollExtent &&
-          images.length != 800 &&
+          sImages.length != 800 &&
           searching == true) {
         getSearch(width);
       }
