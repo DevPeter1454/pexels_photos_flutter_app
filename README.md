@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is an application for downloading quality images from pexels.com. Some functionalties are limited to the android and ios versions only.
 
 A few resources to get you started if this is your first Flutter project:
 
